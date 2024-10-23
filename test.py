@@ -6,7 +6,7 @@ from lightgbm import LGBMRegressor
 N = (100000, 250)
 ITERS = 500
 N_ENSB = 10
-N_JOBS = 30 # default: 0
+N_JOBS = 30 # 스레드개수-1 or 스레드개수-2
 
 x_train = np.random.rand(N[0],N[1])
 y_train = np.random.rand(N[0])
